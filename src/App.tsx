@@ -20,7 +20,7 @@ const App = (): JSX.Element => {
     };
     console.log(newData);
     setArr([...arr, newData]);
-    setTitle('');
+    setTitle("");
   };
 
   const deletItem = (id: number): void => {
@@ -33,6 +33,7 @@ const App = (): JSX.Element => {
       <h1 className={styles.title}>App Todo</h1>
       <input
         type="text"
+        value={title}
         placeholder="Enter todo"
         className={styles.input}
         onChange={handlerInput}
